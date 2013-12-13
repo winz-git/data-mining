@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
+
 import sys
 
 class db:
     conn = None
     
-    host = ""
+    host = "1"
     username = ""
     password = ""
     db = ""
@@ -17,10 +19,10 @@ class db:
         self.db = db
         self.path = ""
 
-    def connect(self):
-        #
+    def commit(self):
+        self.conn.commit()
 
-    def disconnect(self):
+    def close(self):
         #
         if (self.conn):
             self.conn.close()

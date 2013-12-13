@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
+
 import os,sys
 lib_path = os.path.abspath('./scripts/library')
-sys.path.append(lib_path)
+print(lib_path)
 
-import db_sqlite.dbSqlite as lite
 
-print lite()
+from library import *
+
+
 
 
